@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    <TextView
+        android:id="@+id/txt_exam_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exam name"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+
+    <TextView
+        android:id="@+id/txt_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student name"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No of Right Quetions : "
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_90"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_right_que"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/green_800"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No of Wrong Quetions : "
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_90"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_wrong_que"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_800"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Score : "
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_90"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/amber_800"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="06dp" />
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Result : "
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_90"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="06dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_800"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="06dp" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_marginLeft="@dimen/spacing_xmedium"
+        android:layout_marginRight="@dimen/spacing_xmedium"
+        android:weightSum="2">
+
+        <!-- Signup Button -->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_review"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="Key Review"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_dashboard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="Dashboard"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_40"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_80"
+        android:layout_margin="1dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_exam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exam"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/text_starttime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="StartTime"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_marginLeft="03dp"
+                />
+
+            <TextView
+                android:id="@+id/text_endtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="EndTime"
+                android:textSize="12sp"
+                android:layout_marginLeft="03dp" />
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Score"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_marginLeft="03dp" />
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginLeft="03dp" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+             <ImageButton
+                 android:id="@+id/btn_edit"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="15dp"
+                 android:background="@drawable/edit"
+                 />
+
+             <ImageButton
+                 android:id="@+id/btn_delete"
+                 android:layout_width="30dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="30dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/delete" />
+
+         </LinearLayout>-->
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

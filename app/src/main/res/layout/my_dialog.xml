@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="330dp"
+android:layout_height="wrap_content"
+android:background="@android:color/white"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/bt_close"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/grey_80"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_close" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="120dp"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_mlarge">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/overlay_dark_10"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="SHARE &amp; HELP"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"         android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="Help your friends by sharing this FREE Application"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        />
+
+
+ <!--   <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/short_lorem_ipsum"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/grey_60" />-->
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/btn_rounded_accent"
+        android:paddingLeft="@dimen/spacing_mlarge"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:paddingRight="@dimen/spacing_mlarge"
+        android:text="Share Now"
+        android:textColor="@android:color/white" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/spacing_mlarge"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:paddingRight="@dimen/spacing_mlarge"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_90"  />
+
+</LinearLayout>
+
+</LinearLayout>
